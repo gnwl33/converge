@@ -1,0 +1,4 @@
+.section {
+  composes: center round from global;
+  margin: 50px;
+}

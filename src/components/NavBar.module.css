@@ -1,0 +1,5 @@
+.navbar {
+  composes: v-center from global;
+  height: 75px;
+  padding: 0 50px;
+}

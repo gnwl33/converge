@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+
+.logo {
+  composes: v-center from global;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.converge {
+  margin-left: 21px;
+}
+
+.rightHeader {
+  composes: v-center space from global;
+  position: absolute;
+  right: 50px;
+  width: 417px;
+}
+
+.border {
+  border: 2px solid var(--blue);
+}
+
+.border:hover {
+  border-color: var(--navy);
+}
+
+@media screen and (max-width: 955px) {
+  .rightHeader {
+    width: 380px;
+  }
+}

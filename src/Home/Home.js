@@ -1,16 +1,16 @@
-import React from 'react';
-import Header from '../components/Header';
+import React, { useState } from 'react';
 import TopCTA from './TopCTA';
-import './Home.css';
+import HowItWorks from './HowItWorks';
+import Satisfaction from './Satisfaction';
+import BottomCTA from './BottomCTA';
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <TopCTA />
-      <div className="how-it-works"></div>
-      <div className="satisfaction"></div>
-      <div className="footer"></div>
+      <HowItWorks />
+      <Satisfaction />
+      <BottomCTA />
     </div>
   );
 };

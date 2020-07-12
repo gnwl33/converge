@@ -1,0 +1,124 @@
+@import-normalize;
+
+:root {
+  --blue: #265b73;
+  --charcoal: #333333;
+  --silver: #f7f7f7;
+  --navy: #122d4d;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --liteShadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
+body,
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.to-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.light {
+  color: var(--blue);
+  background: white;
+}
+
+.dark {
+  color: white;
+  background: var(--blue);
+}
+
+.silver {
+  color: var(--blue);
+  background: var(--silver);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.white {
+  background: white;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.heading-32 {
+  font-size: 32px;
+}
+
+.heading-40 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.heading-59 {
+  font-size: 59px;
+  font-weight: bold;
+}
+
+.box-shadow {
+  box-shadow: var(--shadow);
+}
+
+.text-shadow {
+  text-shadow: var(--shadow);
+}
+
+.lite-shadow {
+  box-shadow: var(--liteShadow);
+}
+
+@media screen and (max-width: 1100px) {
+  .heading-59 {
+    font-size: 40px;
+  }
+}

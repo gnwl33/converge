@@ -1,21 +1,27 @@
-// import React from 'react';
-import styled from 'styled-components';
+import React from 'react';
+import { Button as B } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import s from './Button.module.css';
 
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  border-radius: 50px;
-  font-weight: bold;
+const Button = (p) => {
+  const style = {
+    width: p.width,
+    height: p.height,
+    fontSize: p.size,
+  };
 
-  ${({ theme, light, width, height, size }) => `
-    color: ${light ? theme.blue : 'white'};
-    background-color: ${light ? 'white' : theme.blue};
-    width: ${width};
-    height: ${height};
-    font-size: ${size};
-  `}
-`;
+  let classes = `${s.button} ${p.className}`;
+  if (p.className.includes('light')) {
+    classes += ` ${s.light}`;
+  } else {
+    classes += ` ${s.dark}`;
+  }
+
+  return (
+    <B component={Link} to={p.to} className={classes} style={style}>
+      {p.children}
+    </B>
+  );
+};
 
 export default Button;

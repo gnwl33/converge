@@ -1,18 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import Home from './Home/Home';
-import theme from './assets/theme';
-import './assets/index.css';
+import App from './App';
+/*  <React.StrictMode>*/
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Home />
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

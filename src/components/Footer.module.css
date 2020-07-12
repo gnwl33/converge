@@ -1,0 +1,9 @@
+.left {
+  composes: space from global;
+  width: 343px;
+}
+
+.right {
+  composes: space from global;
+  width: 180px;
+}

@@ -1,0 +1,51 @@
+.wrapper {
+  composes: center from global;
+  height: 41.45vw;
+}
+
+.topCTA {
+  composes: v-center from global;
+  flex-direction: column;
+}
+
+.topCTA::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 46.66vw;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.69) 0%,
+      rgba(0, 0, 0, 0.62) 30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(hero.png);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.headline {
+  margin-bottom: 50px;
+}
+
+.trisection {
+  display: flex;
+  flex: 1;
+  width: 90%;
+}
+
+.title {
+  margin-top: 85px;
+}
+
+.trusted {
+  margin-top: 110px;
+}
+
+.pStyle {
+  text-align: center;
+  width: 210px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
