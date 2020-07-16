@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TopCTA from './TopCTA';
 import HowItWorks from './HowItWorks';
 import Satisfaction from './Satisfaction';

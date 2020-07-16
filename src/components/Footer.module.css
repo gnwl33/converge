@@ -4,6 +4,6 @@
 }
 
 .right {
-  composes: space from global;
+  composes: space right from global;
   width: 180px;
 }

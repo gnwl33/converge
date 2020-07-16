@@ -4,17 +4,15 @@ import s from './Home.module.css';
 
 const TriSection = (p) => {
   return (
-    <Section className={`${p.className} column`} height="490px">
+    <Section className={`${p.className} column`} height="490">
       <div className={`${s.title} ${p.className} heading-40`}>{p.title}</div>
-      {p.satisfaction && (
-        <p className={`${s.trusted} text-28 blue`}>Trusted by</p>
-      )}
+      {p.satisfaction && <p className={s.trusted}>Trusted by</p>}
       <div className={s.trisection}>
         {p.contents &&
           p.contents.map((content) => {
             let text;
             text = p.satisfaction ? null : (
-              <p className={`${s.pStyle} text-28`}>{content.text}</p>
+              <p className={s.pStyle}>{content.text}</p>
             );
 
             return (

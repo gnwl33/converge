@@ -14,10 +14,14 @@ const Footer = (props) => {
           <Link className="text-24">{word}</Link>
         ))}
       </div>
-      <div className={`${s.right} to-right`}>
-        <img src={facebook} alt="facebook icon" />
-        <img src={twitter} alt="twitter icon" />
-        <img src={linkedin} alt="linkedin icon" />
+      <div className={s.right}>
+        {[
+          { src: facebook, alt: 'facebook' },
+          { src: twitter, alt: 'twitter' },
+          { src: linkedin, alt: 'linkedin' },
+        ].map((icon) => (
+          <img src={icon.src} alt={`${icon.alt} icon`} />
+        ))}
       </div>
     </div>
   );

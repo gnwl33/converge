@@ -14,3 +14,11 @@
 .dark:hover {
   background: var(--navy);
 }
+
+.border {
+  border: 2px solid var(--blue);
+}
+
+.border:hover {
+  border-color: var(--navy);
+}

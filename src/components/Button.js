@@ -10,15 +10,27 @@ const Button = (p) => {
     fontSize: p.size,
   };
 
-  let classes = `${s.button} ${p.className}`;
-  if (p.className.includes('light')) {
+  let cls = p.className;
+
+  let classes = `${s.button} ${cls}`;
+  if (cls.includes('light')) {
     classes += ` ${s.light}`;
+    if (!cls.includes('no-border')) {
+      classes += ` ${s.border}`;
+    }
   } else {
     classes += ` ${s.dark}`;
   }
 
   return (
-    <B component={Link} to={p.to} className={classes} style={style}>
+    <B
+      component={Link}
+      to={p.to}
+      className={classes}
+      startIcon={p.startIcon}
+      style={style}
+      onClick={p.onClick}
+    >
       {p.children}
     </B>
   );

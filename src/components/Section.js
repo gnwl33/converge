@@ -3,7 +3,7 @@ import s from './Section.module.css';
 
 const Section = (p) => {
   const style = {
-    height: p.height,
+    height: `${p.height}px`,
   };
 
   return (

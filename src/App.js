@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
   StylesProvider,
@@ -15,22 +15,20 @@ import './App.css';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#fff',
+      main: '#265b73',
     },
     secondary: {
-      main: '#265b73',
+      main: '#122d4d',
     },
   },
 });
 
 const App = () => {
-  const [count, setCount] = useState(1);
-
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst>
         <Router>
-          <Header count={count} setCount={setCount} />
+          <Header />
           <Switch>
             <Route exact path="/">
               <Home />

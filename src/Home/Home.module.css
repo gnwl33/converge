@@ -26,12 +26,12 @@
 }
 
 .headline {
+  composes: heading-59 text-shadow from global;
   margin-bottom: 50px;
 }
 
 .trisection {
-  display: flex;
-  flex: 1;
+  composes: flex flex-1 from global;
   width: 90%;
 }
 
@@ -40,10 +40,12 @@
 }
 
 .trusted {
+  composes: text-28 blue from global;
   margin-top: 110px;
 }
 
 .pStyle {
+  composes: text-28 from global;
   text-align: center;
   width: 210px;
   margin-top: 32px;

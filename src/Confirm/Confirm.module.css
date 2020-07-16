@@ -1,0 +1,33 @@
+.modal {
+  composes: center abs-center white round shadow from global;
+  flex-direction: column;
+  width: 385px;
+  height: 666px;
+  color: #333;
+}
+
+.close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  font-size: 44px;
+}
+
+.success {
+  composes: text-28 from global;
+  margin-bottom: 8px;
+}
+
+.email {
+  margin-bottom: 75px;
+}
+
+.booked {
+  composes: email text-18 from global;
+}
+
+.check {
+  color: var(--cyan);
+  font-size: 88px;
+  margin-bottom: 75px;
+}

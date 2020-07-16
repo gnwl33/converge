@@ -9,7 +9,6 @@ import logoIcon from '../img/logo.svg';
 const Header = (p) => {
   let path = useLocation().pathname;
   const [scroll, setScroll] = useState(true);
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (path !== '/') {
@@ -32,20 +31,18 @@ const Header = (p) => {
   }, [scroll, path]);
 
   const theme = useTheme();
-
   let img;
   let color = {};
   let text = 'text-24';
   let button = 'light';
   let header = s.header;
   if (path === '/' && scroll) {
-    img = 'box-shadow';
+    img = 'dark-shadow';
     text += ' text-shadow';
-    button += ' box-shadow';
+    button += ' dark-shadow no-border';
   } else {
-    color = { color: theme.palette.secondary.main, background: 'white' };
-    button += ` ${s.border}`;
-    header += ' lite-shadow';
+    color = { color: theme.palette.primary.main, background: 'white' };
+    header += ' shadow';
   }
 
   return (

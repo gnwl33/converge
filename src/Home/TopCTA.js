@@ -6,12 +6,10 @@ const TopCTA = () => {
   return (
     <div className={s.wrapper}>
       <div className={s.topCTA}>
-        <div className={`${s.headline} heading-59 text-shadow`}>
-          Booking a room has never been easier.
-        </div>
+        <div className={s.headline}>Booking a room has never been easier.</div>
         <Button
           to="/auth"
-          className="light box-shadow"
+          className="light dark-shadow no-border"
           width="334px"
           height="87px"
           size="35px"
