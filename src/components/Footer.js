@@ -11,7 +11,9 @@ const Footer = (props) => {
     <div className={`${styles.navbar} dark`}>
       <div className={s.left}>
         {['About', 'Policy', 'Contact'].map((word) => (
-          <Link className="text-24">{word}</Link>
+          <Link to="/" className="text-24" key={word}>
+            {word}
+          </Link>
         ))}
       </div>
       <div className={s.right}>
@@ -20,7 +22,7 @@ const Footer = (props) => {
           { src: twitter, alt: 'twitter' },
           { src: linkedin, alt: 'linkedin' },
         ].map((icon) => (
-          <img src={icon.src} alt={`${icon.alt} icon`} />
+          <img key={icon.alt} src={icon.src} alt={`${icon.alt} icon`} />
         ))}
       </div>
     </div>

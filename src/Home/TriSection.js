@@ -16,7 +16,7 @@ const TriSection = (p) => {
             );
 
             return (
-              <div className="center flex-1">
+              <div className="center flex-1" key={content.alt}>
                 <div className="center column">
                   <img
                     src={content.src}

@@ -7,7 +7,9 @@
   --navy: #122d4d;
   --grey: #777;
   --cyan: #77c4d6;
-  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
+  --grn: #1c8345;
+  --rd: #cc1f1f;
+  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
   --darkShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -20,12 +22,17 @@
   text-decoration: none;
 }
 
+/*body {
+  background: #5c9bb8;
+}*/
+
 body,
 a {
   color: white;
 }
 
 a:hover {
+  color: white;
   text-decoration: underline;
 }
 
@@ -68,6 +75,12 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .top {
   position: absolute;
   top: 0;
@@ -79,6 +92,10 @@ a:hover {
 
 .round {
   border-radius: 10px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .light {
@@ -96,12 +113,26 @@ a:hover {
   background: var(--silver);
 }
 
-.blue {
+.blu {
   color: var(--blue);
 }
 
 .white {
   background: white;
+}
+
+.charc {
+  color: var(--charcoal);
+}
+
+.grn {
+  color: var(--grn);
+  background: rgba(28, 131, 69, 0.2);
+}
+
+.rd {
+  color: var(--rd);
+  background: rgba(234, 67, 53, 0.35);
 }
 
 .text-24 {
@@ -122,7 +153,7 @@ a:hover {
 }
 
 .heading-59 {
-  font-size: 59px;
+  font-size: 3.625rem;
   font-weight: bold;
 }
 
@@ -138,8 +169,32 @@ a:hover {
   box-shadow: var(--darkShadow);
 }
 
-@media screen and (max-width: 1100px) {
-  .heading-59 {
-    font-size: 40px;
+.sect-ctnr {
+  background: var(--silver);
+  padding: 1px 0;
+}
+
+.sect {
+  flex-direction: column;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 13px;
   }
+
+  /*  .button {
+    transform: scale(0.8);
+  }*/
+}
+
+@media screen and (max-width: 1920px) {
 }

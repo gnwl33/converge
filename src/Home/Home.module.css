@@ -16,8 +16,8 @@
   height: 46.66vw;
   background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.69) 0%,
-      rgba(0, 0, 0, 0.62) 30%,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.62) 37%,
       rgba(0, 0, 0, 0) 100%
     ),
     url(hero.png);
@@ -40,7 +40,7 @@
 }
 
 .trusted {
-  composes: text-28 blue from global;
+  composes: text-28 blu from global;
   margin-top: 110px;
 }
 

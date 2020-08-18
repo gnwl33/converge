@@ -1,0 +1,28 @@
+.details {
+  composes: sect-ctnr charc from global;
+}
+
+.carousel {
+  width: 50%;
+}
+
+.roomName {
+  composes: heading-40 charc from global;
+  margin: 24px 0px 12px;
+}
+
+.status {
+  display: flex;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.available {
+  composes: text-28 from global;
+}
+
+.until {
+  composes: text-24 from global;
+  padding-top: 9px;
+  margin-left: 11px;
+}

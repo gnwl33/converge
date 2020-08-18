@@ -1,0 +1,4 @@
+.status {
+  composes: round bold from global;
+  padding: 3px 10px;
+}

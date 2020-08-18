@@ -5,6 +5,10 @@
   z-index: 2;
 }
 
+.shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -28,6 +32,11 @@
   position: absolute;
   right: 50px;
   width: 417px;
+}
+
+.avatar {
+  composes: dark from global;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 955px) {

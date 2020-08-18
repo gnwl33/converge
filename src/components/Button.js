@@ -12,7 +12,7 @@ const Button = (p) => {
 
   let cls = p.className;
 
-  let classes = `${s.button} ${cls}`;
+  let classes = `button ${s.button} ${cls}`;
   if (cls.includes('light')) {
     classes += ` ${s.light}`;
     if (!cls.includes('no-border')) {
@@ -24,7 +24,7 @@ const Button = (p) => {
 
   return (
     <B
-      component={Link}
+      component={p.button ? 'button' : Link}
       to={p.to}
       className={classes}
       startIcon={p.startIcon}

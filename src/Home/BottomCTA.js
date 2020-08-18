@@ -6,7 +6,7 @@ import appstore from '../img/appstore.svg';
 const BottomCTA = () => {
   return (
     <div className="center column">
-      <p className="text-28 blue" style={{ marginBottom: '25px' }}>
+      <p className="text-28 blu" style={{ marginBottom: '25px' }}>
         Need to book a room?
       </p>
       <Button

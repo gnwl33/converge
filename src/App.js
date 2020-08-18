@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './Home/Home';
 import Auth from './Auth/Auth';
 import Search from './Search/Search';
+import Details from './Details/Details';
 import './App.css';
 
 const theme = createMuiTheme({
@@ -21,6 +22,15 @@ const theme = createMuiTheme({
       main: '#122d4d',
     },
   },
+  // overrides: {
+  //   MuiOutlinedInput: {
+  //     root: {
+  //       '&:hover $notchedOutline': {
+  //         borderColor: '#333',
+  //       },
+  //     },
+  //   },
+  // },
 });
 
 const App = () => {
@@ -38,6 +48,9 @@ const App = () => {
             </Route>
             <Route path="/search">
               <Search />
+            </Route>
+            <Route path="/details">
+              <Details />
             </Route>
           </Switch>
           <Footer />

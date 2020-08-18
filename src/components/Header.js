@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Avatar } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import Button from './Button';
 import styles from './NavBar.module.css';
@@ -42,8 +43,11 @@ const Header = (p) => {
     button += ' dark-shadow no-border';
   } else {
     color = { color: theme.palette.primary.main, background: 'white' };
-    header += ' shadow';
+    header += ` ${s.shadow}`;
   }
+  const isPreLogin = path === '/' || path === '/auth';
+  let rHeaderWidth = {};
+  if (!isPreLogin) rHeaderWidth = { width: '379px' };
 
   return (
     <div className={s.wrapper}>
@@ -54,22 +58,28 @@ const Header = (p) => {
             CONVERGE
           </div>
         </Link>
-        <div className={s.rightHeader}>
+        <div className={s.rightHeader} style={rHeaderWidth}>
           <Link to="/" className={text} style={color}>
-            Product
+            {isPreLogin ? 'Product' : 'Bookings'}
           </Link>
           <Link to="/" className={text} style={color}>
-            Pricing
+            {isPreLogin ? 'Pricing' : 'Settings'}
           </Link>
-          <Button
-            to="/"
-            className={button}
-            size="24px"
-            width="140px"
-            height="50px"
-          >
-            Log In
-          </Button>
+          {isPreLogin ? (
+            <Button
+              to="/"
+              className={button}
+              size="24px"
+              width="140px"
+              height="50px"
+            >
+              Log In
+            </Button>
+          ) : (
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <Avatar className={s.avatar}>JS</Avatar>
+            </Link>
+          )}
         </div>
       </div>
     </div>

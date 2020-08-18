@@ -1,19 +1,25 @@
 .bg {
-  composes: center from global;
-  height: 51.1vw;
-  position: relative;
+  position: absolute;
+  height: 663.84px;
 }
 
 .bg::after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 51.1vw;
+  width: 1440px;
+  height: 100%;
   opacity: 0.97;
   filter: grayscale(15%);
   background: url(meeting.png);
   background-size: 100%;
   z-index: -1;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+.container {
+  composes: center from global;
+  height: 663.84px;
 }
 
 .main {
@@ -63,7 +69,7 @@
 
 .divider {
   width: 40%;
-  background: var(--grey);
+  background: #999;
 }
 
 .or {
