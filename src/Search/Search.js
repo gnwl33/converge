@@ -303,7 +303,7 @@ const Search = () => {
                     <Button
                       to="/details"
                       className="light ellipsis"
-                      size="20px"
+                      size="1.2em"
                       width="46%"
                       height="45px"
                     >
@@ -312,7 +312,7 @@ const Search = () => {
                     <Button
                       button
                       className="dark right ellipsis"
-                      size="20px"
+                      size="1.2em"
                       width="47%"
                       height="45px"
                       onClick={handleOpen}
