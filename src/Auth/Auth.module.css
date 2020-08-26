@@ -9,7 +9,7 @@
   width: 1440px;
   height: 100%;
   opacity: 0.97;
-  filter: grayscale(15%);
+  filter: grayscale(20%);
   background: url(meeting.png);
   background-size: 100%;
   z-index: -1;
