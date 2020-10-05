@@ -103,9 +103,9 @@ const Auth = () => {
               size="18px"
               width="100%"
               height="55px"
-              startIcon={<Google />}
+              startIcon={<Facebook />}
             >
-              <div className={s.continue}>Continue with Google</div>
+              <div className={s.continue}>Continue with Facebook</div>
             </Button>
             <Button
               button
@@ -113,9 +113,9 @@ const Auth = () => {
               size="18px"
               width="100%"
               height="55px"
-              startIcon={<Facebook />}
+              startIcon={<Google />}
             >
-              <div className={s.continue}>Continue with Facebook</div>
+              <div className={s.continue}>Continue with Google</div>
             </Button>
           </form>
         </div>
